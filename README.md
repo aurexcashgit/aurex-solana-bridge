@@ -1,4 +1,4 @@
-# Aurex Solana Bridge 💳⚡
+# Aurex Solana Bridge 
 
 A comprehensive Solana blockchain integration for Aurex Cash virtual crypto cards, enabling seamless DeFi payments and cross-chain operations.
 
