@@ -1,0 +1,33 @@
+[package]
+name = "aurex_solana_bridge"
+version = "0.1.0"
+description = "Aurex Cash Solana Bridge Program"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "aurex_solana_bridge"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+testing = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+spl-token = "4.0.0"
+spl-associated-token-account = "2.3.0"
+solana-program = "~1.16.0"
+bytemuck = "1.4"
+sha2 = "0.10"
+bs58 = "0.4"
+
+[dev-dependencies]
+solana-program-test = "~1.16.0"
+solana-sdk = "~1.16.0"
+tokio = "1.0"

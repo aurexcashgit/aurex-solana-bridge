@@ -1,0 +1,54 @@
+{
+  "name": "@aurex/solana-bridge-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for Aurex Solana Bridge",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "crypto",
+    "payments",
+    "aurex",
+    "virtual-cards"
+  ],
+  "author": "Aurex Cash <dev@aurex.cash>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurexcashgit/aurex-solana-bridge"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.9",
+    "@coral-xyz/anchor": "^0.29.0",
+    "bs58": "^5.0.0",
+    "buffer": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.87.0"
+  }
+}

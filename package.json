@@ -1,0 +1,66 @@
+{
+  "name": "aurex-solana-bridge",
+  "version": "0.1.0",
+  "description": "Aurex Cash Solana Bridge - Virtual crypto cards on Solana blockchain",
+  "private": true,
+  "workspaces": [
+    "sdk",
+    "api"
+  ],
+  "scripts": {
+    "build": "npm run build:program && npm run build:sdk && npm run build:api",
+    "build:program": "cd program && anchor build",
+    "build:sdk": "cd sdk && npm run build",
+    "build:api": "cd api && npm run build",
+    "test": "npm run test:program && npm run test:sdk && npm run test:api",
+    "test:program": "cd program && anchor test",
+    "test:sdk": "cd sdk && npm run test",
+    "test:api": "cd api && npm run test",
+    "dev": "npm run dev:api",
+    "dev:api": "cd api && npm run dev",
+    "clean": "npm run clean:sdk && npm run clean:api",
+    "clean:sdk": "cd sdk && npm run clean",
+    "clean:api": "cd api && npm run clean",
+    "setup": "./scripts/setup.sh",
+    "deploy": "./scripts/deploy-devnet.sh",
+    "deploy:devnet": "./scripts/deploy-devnet.sh",
+    "lint": "npm run lint:sdk && npm run lint:api",
+    "lint:sdk": "cd sdk && npm run lint",
+    "lint:api": "cd api && npm run lint",
+    "cli": "node scripts/cli.js",
+    "monitor": "node scripts/monitor.js",
+    "docker:build": "docker build -t aurex-solana-bridge .",
+    "docker:dev": "docker-compose up -d",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "bin": {
+    "aurex-cli": "./scripts/cli.js"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "crypto",
+    "payments",
+    "virtual-cards",
+    "defi",
+    "aurex",
+    "bridge"
+  ],
+  "author": "Aurex Cash <dev@aurex.cash>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurexcashgit/aurex-solana-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aurexcashgit/aurex-solana-bridge/issues"
+  },
+  "homepage": "https://github.com/aurexcashgit/aurex-solana-bridge#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0"
+  }
+}
