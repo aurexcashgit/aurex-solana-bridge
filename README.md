@@ -1,8 +1,6 @@
-# Aurex Solana Bridge 
+# Aurex Solana Bridge 💳⚡
 
 A comprehensive Solana blockchain integration for Aurex Cash virtual crypto cards, enabling seamless DeFi payments and cross-chain operations.
-
-> 🇷🇺 [**Документация на русском языке**](./README.ru.md) | 🇺🇸 English Documentation Below
 
 ## 🎯 Features
 
@@ -79,18 +77,10 @@ cd aurex-solana-bridge
 
 ## 📚 Documentation
 
-**English:**
 - [Program Guide](./docs/program.md) - Solana program documentation
 - [SDK Reference](./docs/sdk.md) - Client SDK usage
 - [API Reference](./docs/api.md) - Bridge API endpoints
 - [Security](./docs/security.md) - Security considerations
-
-**Русский:**
-- [README на русском](./README.ru.md) - Полное руководство на русском языке
-- [Руководство по программе](./docs/program.ru.md) - Документация Solana программы
-- [Справочник SDK](./docs/sdk.ru.md) - Использование клиентского SDK
-- [API Reference](./docs/api.ru.md) - Endpoints API моста
-- [Безопасность](./docs/security.ru.md) - Соображения безопасности
 
 ## 🤝 Contributing
 
